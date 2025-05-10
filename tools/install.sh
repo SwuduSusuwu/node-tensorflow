@@ -83,7 +83,7 @@ fetch() {
 		&& echo "== unpacking" \
 		&& tar -zxf $tarball \
 		&& echo "== removing tarball" \
-		&& rm -fr $tarball \
+		&& rm $tarball \
 		&& make_install $dir $2
 }
 
