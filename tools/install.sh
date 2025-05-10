@@ -98,7 +98,7 @@ fetch_xz() {
 		&& echo "== unpacking" \
 		&& tar -xJf $tarball \
 		&& echo "== removing tarball" \
-		&& rm -fr $tarball \
+		&& rm $tarball \
 		&& make_install $dir
 }
 
